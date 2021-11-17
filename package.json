@@ -1,14 +1,14 @@
 {
-  "name": "@pantherswap-libs/uikit",
-  "version": "0.1.1",
-  "description": "Set of UI components for panther projects",
+  "name": "@wakandaswap-libs/uikit",
+  "version": "0.1.0",
+  "description": "Set of UI components for wakanda projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pantherswap/panther-uikit",
+  "repository": "https://github.com/wakandaswap/wakanda-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
