@@ -114,21 +114,21 @@ export const links = [
 ];
 
 export const socials = [
-  // {
-  //   label: "Github",
-  //   icon: "GithubIcon",
-  //   href: "https://github.com/wakandaswap",
-  // },
+  {
+    label: "Github",
+    icon: "GithubIcon",
+    href: "https://github.com/wakandaswap",
+  },
   // {
   //   label: "Docs",
   //   icon: "GitbookIcon",
   //   href: "https://docs.wakandaswap.net",
   // },
-  // {
-  //   label: "Medium",
-  //   icon: "MediumIcon",
-  //   href: "https://wakandaswap.medium.com",
-  // },
+  {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://wakandaswap.medium.com",
+  },
   {
     label: "Twitter",
     icon: "TwitterIcon",
