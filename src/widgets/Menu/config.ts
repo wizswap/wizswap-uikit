@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://dex.wakandaswap.net",
+        href: "https://dex.wakandaswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://dex.wakandaswap.net/#/pool",
+        href: "https://dex.wakandaswap.finance/#/pool",
       },
     ],
   },
@@ -95,7 +95,7 @@ export const links = [
   //   items: [
   //     {
   //       label: "Voting",
-  //       href: "https://voting.wakandaswap.net",
+  //       href: "https://voting.wakandaswap.finance",
   //     },
   //     {
   //       label: "Github",
@@ -103,7 +103,7 @@ export const links = [
   //     },
   //     {
   //       label: "Docs",
-  //       href: "https://docs.wakandaswap.net",
+  //       href: "https://docs.wakandaswap.finance",
   //     },
   //     {
   //       label: "Blog",
@@ -122,7 +122,7 @@ export const socials = [
   // {
   //   label: "Docs",
   //   icon: "GitbookIcon",
-  //   href: "https://docs.wakandaswap.net",
+  //   href: "https://docs.wakandaswap.finance",
   // },
   {
     label: "Medium",
