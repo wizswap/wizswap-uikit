@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://dex.wakandaswap.finance",
+        href: "https://exchange.wakandaswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://dex.wakandaswap.finance/#/pool",
+        href: "https://exchange.wakandaswap.finance/#/pool",
       },
     ],
   },
@@ -127,12 +127,12 @@ export const socials = [
   {
     label: "Medium",
     icon: "MediumIcon",
-    href: "https://wakandaswap.medium.com",
+    href: "https://wakandainu.medium.com",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/wakandaswap",
+    href: "https://twitter.com/wakandainu",
   },
   {
     label: "Telegram",
@@ -140,7 +140,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/wakandaswap",
+        href: "https://t.me/wakandainu",
       },
       // {
       //   label: "Announcements",
