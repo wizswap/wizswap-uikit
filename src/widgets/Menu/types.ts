@@ -47,6 +47,7 @@ export interface PanelProps {
   langs: LangType[];
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
+  socials: Array<MenuEntry>;
 }
 
 export interface NavProps extends PanelProps {

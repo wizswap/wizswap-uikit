@@ -10,7 +10,7 @@ import Button from "../../components/Button/Button";
 import IconButton from "../../components/Button/IconButton";
 import MenuButton from "./MenuButton";
 import * as IconModule from "./icons";
-import { socials, MENU_ENTRY_HEIGHT } from "./config";
+import { MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
 
 interface Props extends PanelProps, PushedProps {}
@@ -63,6 +63,7 @@ const PanelFooter: React.FC<Props> = ({
   cakePriceLink,
   currentLang,
   langs,
+  socials,
   setLang,
 }) => {
   if (!isPushed) {
