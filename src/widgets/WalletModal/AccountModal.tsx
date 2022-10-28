@@ -23,8 +23,8 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://bscscan.com/address/${account}`} mr="16px">
-        View on BscScan
+      <LinkExternal small href={`https://explorer2.etherone.one/address/${account}`} mr="16px">
+        View on EtherOne
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>

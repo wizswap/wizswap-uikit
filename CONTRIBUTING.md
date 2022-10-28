@@ -1,7 +1,7 @@
-# Contributing to the Wakanda ecosystem
+# Contributing to the Wiz ecosystem
 
 Thanks for taking the time to contribute !
-You can start by reading our [Contribution guidelines](https://docs.wakandaswap.com/code/contributing) first.
+You can start by reading our [Contribution guidelines](https://docs.wizswap.com/code/contributing) first.
 
 ## Setup
 

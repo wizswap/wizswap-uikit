@@ -1,20 +1,20 @@
-# Wakanda UIkit
+# Wiz UIkit
 
-Wakanda UIkit is a set of React components and hooks used to build pages on Wakanda's apps. It also contains a theme file for dark and light mode.
+Wiz UIkit is a set of React components and hooks used to build pages on Wiz's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-`yarn add @wakandaswap-libs/uikit`
+`yarn add @wizswap-libs/uikit`
 
 ## Setup
 
 ### Theme
 
-Before using Wakanda UIkit, you need to provide the theme file to styled-component.
+Before using Wiz UIkit, you need to provide the theme file to styled-component.
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@wakandaswap-libs/uikit'
+import { light, dark } from '@wizswap-libs/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -24,7 +24,7 @@ import { light, dark } from '@wakandaswap-libs/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@wakandaswap-libs/uikit'
+import { ResetCSS } from '@wizswap-libs/uikit'
 ...
 <ResetCSS />
 ```
