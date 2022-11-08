@@ -39,7 +39,7 @@ const BodyWrapper = styled.div`
   display: flex;
 `;
 
-const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
+const Inner = styled.div<{ isPushed: boolean; removeNav: boolean | undefined; showMenu: boolean }>`
   flex-grow: 1;
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
   transition: margin-top 0.2s;
@@ -47,18 +47,18 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   max-width: 100%;
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
-    max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px)`};
+    margin-left: ${({ isPushed, removeNav }) => { return (removeNav) ? "0" : `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px` }};
+    max-width: ${({ isPushed, removeNav }) => { return (removeNav) ? "100%" : `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px)` }};
   }
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`
-  position: fixed;
-  height: 100%;
+position: fixed;
+height: 100 %;
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    display: none;
-  }
+  display: none;
+}
 `;
 
 const Menu: React.FC<NavProps> = ({
@@ -74,6 +74,7 @@ const Menu: React.FC<NavProps> = ({
   cakePriceLink,
   links,
   socials,
+  removeNav,
   profile,
   children,
 }) => {
@@ -84,6 +85,9 @@ const Menu: React.FC<NavProps> = ({
   const refPrevOffset = useRef(window.pageYOffset);
 
   useEffect(() => {
+    if (removeNav)
+      setIsPushed(true)
+
     const handleScroll = () => {
       const currentOffset = window.pageYOffset;
       const isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
@@ -119,6 +123,7 @@ const Menu: React.FC<NavProps> = ({
     <Wrapper>
       <StyledNav showMenu={showMenu}>
         <Logo
+          removeNav={removeNav}
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
           isDark={isDark}
@@ -130,25 +135,26 @@ const Menu: React.FC<NavProps> = ({
         </Flex>
       </StyledNav>
       <BodyWrapper>
-        <Panel
-          isPushed={isPushed}
-          isMobile={isMobile}
-          showMenu={showMenu}
-          isDark={isDark}
-          toggleTheme={toggleTheme}
-          langs={langs}
-          setLang={setLang}
-          currentLang={currentLang}
-          cakePriceUsd={cakePriceUsd}
-          cakePriceLink={cakePriceLink}
-          pushNav={setIsPushed}
-          links={links}
-          socials={socials}
-        />
-        <Inner isPushed={isPushed} showMenu={showMenu}>
+        {!removeNav &&
+          <Panel
+            isPushed={isPushed}
+            isMobile={isMobile}
+            showMenu={showMenu}
+            isDark={isDark}
+            toggleTheme={toggleTheme}
+            langs={langs}
+            setLang={setLang}
+            currentLang={currentLang}
+            cakePriceUsd={cakePriceUsd}
+            cakePriceLink={cakePriceLink}
+            pushNav={setIsPushed}
+            links={links}
+            socials={socials}
+          />}
+        <Inner isPushed={isPushed} removeNav={removeNav} showMenu={showMenu}>
           {children}
         </Inner>
-        <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
+        {!removeNav && < MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />}
       </BodyWrapper>
     </Wrapper>
   );

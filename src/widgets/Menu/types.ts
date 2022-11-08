@@ -51,6 +51,7 @@ export interface PanelProps {
 }
 
 export interface NavProps extends PanelProps {
+  removeNav?: boolean;
   account?: string;
   login: Login;
   profile?: Profile;
