@@ -117,7 +117,7 @@ export const socials = [
   {
     label: "Github",
     icon: "GithubIcon",
-    href: "https://github.com/wizswap"
+    href: "https://github.com/maxxchain"
   },
   // {
   //   label: "Docs",
@@ -132,7 +132,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/wizswap",
+    href: "https://twitter.com/maxx",
   },
   {
     label: "Telegram",
@@ -140,7 +140,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/ether_one_blockchain",
+        href: "https://t.me/maxx",
       },
       // {
       //   label: "Announcements",

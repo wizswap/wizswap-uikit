@@ -64,11 +64,11 @@ const Logo: React.FC<Props> = ({ isPushed, removeNav, togglePush, isDark, href }
           )}
         </MenuButton>}
       {isAbsoluteUrl ? (
-        <StyledLink as="a" removeNav={removeNav} href={href} aria-label="Wiz home page">
+        <StyledLink as="a" removeNav={removeNav} href={href} aria-label="MaxxSwap home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink removeNav={removeNav} to={href} aria-label="Wiz home page">
+        <StyledLink removeNav={removeNav} to={href} aria-label="MaxxSwap home page">
           {innerLogo}
         </StyledLink>
       )}
