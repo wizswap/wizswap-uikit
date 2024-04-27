@@ -345,7 +345,7 @@ var Icon$Q = function (props) {
 
 var Icon$P = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React.createElement("image", { href: "/maxxswap-logo.png", width: "32" })));
+        React.createElement("image", { href: "/wizswap-logo.png", width: "32" })));
 };
 
 var Icon$O = function (props) {
@@ -408,7 +408,7 @@ var Icon$K = function (props) {
 
 var Icon$J = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React.createElement("image", { href: "/maxxswap-logo.png", width: "90" })));
+        React.createElement("image", { href: "/wizswap-logo.png", width: "90" })));
 };
 
 var Icon$I = function (props) {
@@ -1933,7 +1933,7 @@ var Logo$1 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     // const textColor = isDark ? "#FFFFFF" : "#000000";
     return (React.createElement(Svg, __assign({ viewBox: "0 0 174 26" }, props),
-        React.createElement("image", { href: "/maxxswap-logo-light.png", width: "174" })));
+        React.createElement("image", { href: "/wizswap-logo-light.png", width: "174" })));
 };
 
 var Icon$o = function (props) {
@@ -2110,7 +2110,7 @@ var Logo = function (_a) {
     return (React.createElement(Flex, null,
         !removeNav &&
             React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "14px" }, isPushed ? (React.createElement(Icon$t, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$u, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", removeNav: removeNav, href: href, "aria-label": "MaxxSwap home page" }, innerLogo)) : (React.createElement(StyledLink, { removeNav: removeNav, to: href, "aria-label": "MaxxSwap home page" }, innerLogo))));
+        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", removeNav: removeNav, href: href, "aria-label": "WizSwap home page" }, innerLogo)) : (React.createElement(StyledLink, { removeNav: removeNav, to: href, "aria-label": "WizSwap home page" }, innerLogo))));
 };
 var templateObject_1$c;
 
